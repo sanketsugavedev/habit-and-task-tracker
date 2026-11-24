@@ -1,0 +1,102 @@
+
+.add-habit-container {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.add-habit-header {
+    margin-bottom: 25px;
+}
+
+.add-habit-header h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.add-habit-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.add-habit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-habit-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add-habit-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.add-habit-form input,
+.add-habit-form textarea,
+.add-habit-form select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.add-habit-form input:focus,
+.add-habit-form textarea:focus,
+.add-habit-form select:focus {
+    border-color: #6366f1;
+}
+
+.add-habit-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.habit-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-habit-btn,
+.save-habit-btn {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-habit-btn {
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.save-habit-btn {
+    background: #6366f1;
+    color: white;
+}
+
+.save-habit-btn:hover {
+    background: #4f46e5;
+}
+
+@media (max-width: 500px) {
+    .habit-form-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .habit-form-buttons button {
+        width: 100%;
+    }
+}

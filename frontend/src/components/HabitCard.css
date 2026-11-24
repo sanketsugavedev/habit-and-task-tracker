@@ -1,0 +1,122 @@
+
+.habit-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    transition: 0.2s;
+}
+
+.habit-card:hover {
+    border-color: #c7d2fe;
+}
+
+.habit-card.completed {
+    border-color: #bbf7d0;
+}
+
+.habit-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.habit-card-info {
+    flex: 1;
+}
+
+.habit-card-info h3 {
+    color: #1e293b;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.habit-card-info p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.habit-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.habit-frequency {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.habit-streak {
+    color: #ea580c;
+    font-size: 13px;
+}
+
+.habit-card-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.habit-card-actions button {
+    padding: 9px 12px;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.complete-habit-btn {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.complete-habit-btn:hover:not(:disabled) {
+    background: #e0e7ff;
+}
+
+.complete-habit-btn.completed {
+    background: #dcfce7;
+    color: #15803d;
+    cursor: default;
+}
+
+.edit-habit-btn {
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.delete-habit-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+@media (max-width: 750px) {
+    .habit-card-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .habit-card-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .habit-card-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .habit-card-actions button {
+        width: 100%;
+    }
+}

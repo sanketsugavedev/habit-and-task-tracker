@@ -1,0 +1,105 @@
+
+.task-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.task-card-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.task-card-left input {
+    width: 18px;
+    height: 18px;
+    accent-color: #6366f1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task-info h3 {
+    font-size: 15px;
+    color: #1e293b;
+    margin-bottom: 7px;
+}
+
+.task-info p {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.task-card-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.priority-badge {
+    font-size: 12px;
+    padding: 6px 11px;
+    border-radius: 20px;
+}
+
+.priority-badge.high {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.priority-badge.medium {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.priority-badge.low {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.task-due-date {
+    color: #64748b;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.edit-task-btn {
+    color: #6366f1;
+}
+
+.delete-task-btn {
+    color: #dc2626;
+}
+
+@media (max-width: 650px) {
+    .task-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-card-right {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+    }
+}
